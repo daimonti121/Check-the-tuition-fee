@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Light.woff2"), url("/fonts/Roboto-Light.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.woff2"), url("/fonts/Roboto-Regular.woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.woff2"), url("/fonts/Roboto-Bold.woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Roboto, arial, sans-serif; }
+
+.content {
+  width: 100%;
+  height: 600px;
+  margin: 22px auto 90px;
+  z-index: 20;
+  position: relative;
+  overflow: hidden; }
+  .content img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.content__title {
+  text-align: center;
+  margin: 0 auto;
+  top: 250px;
+  position: relative;
+  z-index: 20; }
+  .content__title h2 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 94px;
+    font-family: Roboto;
+    color: #000000; }
+
+.section-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1320px;
+  width: 100%; }
+
+.curriculumAndClass {
+  margin-left: 20px;
+  width: 55%; }
+
+.course {
+  width: 45%; }
+
+.curriculum {
+  margin-right: 30px;
+  margin-bottom: 60px; }
+  .curriculum__title {
+    width: 100%;
+    margin-bottom: 4px; }
+    .curriculum__title h2 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 21px; }
+  .curriculum .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+  .curriculum .list__programs {
+    max-width: 210px;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #DBDBDB;
+    background-color: #DBDBDB;
+    color: #6A6A6A;
+    outline: none;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .curriculum .list__programs h3 {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: bold; }
+    .curriculum .list__programs span {
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center; }
+  .curriculum .list__programs:focus {
+    background-color: #4E82BE;
+    color: white;
+    border: 1px solid #4E82BE; }
+  .curriculum .list__programs:hover {
+    background-color: #4E82BE;
+    color: white;
+    border: 1px solid #4E82BE; }
+
+.class {
+  margin-right: 30px; }
+  .class__title {
+    width: 100%;
+    margin-bottom: 4px; }
+    .class__title h2 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 21px; }
+  .class__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .class__list ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 5px 0px;
+      width: 100%;
+      list-style-type: none; }
+      .class__list ul li {
+        width: 95%;
+        height: 45px;
+        margin: 5px 8px;
+        margin-left: 0; }
+        .class__list ul li button {
+          border: 1px solid #DBDBDB;
+          background-color: #FFFFFF;
+          color: #6A6A6A;
+          padding: 12px;
+          width: 100%;
+          outline: none;
+          cursor: pointer;
+          -webkit-transition: 0.5s;
+          transition: 0.5s; }
+          .class__list ul li button span {
+            font-size: 18px;
+            line-height: 21px;
+            color: #515151; }
+        .class__list ul li .button-first {
+          background-color: #E6E9F0;
+          border: 1px solid blue; }
+        .class__list ul li button:hover {
+          background-color: #4E82BE;
+          color: #FFFFFF;
+          border: 1px solid #4E82BE; }
+        .class__list ul li button:focus {
+          background-color: #4E82BE;
+          border: 1px solid #4E82BE; }
+        .class__list ul li button:hover span {
+          color: #FFFFFF; }
+        .class__list ul li button:focus span {
+          color: #FFFFFF; }
+
+.course {
+  width: 45%;
+  margin-right: 20px; }
+  .course__header {
+    width: 100%;
+    margin-bottom: 4px; }
+    .course__header h3 {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: bold; }
+  .course__body {
+    width: 100%; }
+  .course__body-title {
+    width: 100%;
+    height: auto;
+    background-color: #4E82BE; }
+    .course__body-title h4 {
+      color: #FFFFFF;
+      padding: 14px 0px 14px 25px;
+      margin: 3px 0 0; }
+  .course ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    list-style-type: none; }
+    .course ul li {
+      width: 100%;
+      height: 40px;
+      margin: 2px 0px; }
+      .course ul li button {
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        background-color: rgba(111, 143, 224, 0.88);
+        outline: none;
+        border: 1px solid rgba(111, 143, 224, 0.88);
+        cursor: pointer;
+        text-align: left; }
+        .course ul li button span {
+          font-size: 18px;
+          line-height: 21px;
+          color: #FFFFFF;
+          position: relative;
+          left: 25px; }
+      .course ul li button:hover {
+        background-color: rgba(111, 143, 224, 0.78); }
+      .course ul li button:focus {
+        background-color: rgba(111, 143, 224, 0.78); }
+  .course__footer {
+    width: 100%;
+    background-color: #000000;
+    text-align: center; }
+    .course__footer h4 {
+      color: #FFFFFF;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: bold;
+      padding: 12px 0px; }
+
+.section__bottom {
+  margin: 0 auto;
+  max-width: 1320px;
+  width: 95%; }
+  .section__bottom .reservation {
+    width: 100%;
+    padding-left: 0px; }
+    .section__bottom .reservation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style: none; }
+      .section__bottom .reservation ul li {
+        width: 93px;
+        margin-right: 2px; }
+        .section__bottom .reservation ul li button {
+          border: 1px solid #DBDBDB;
+          background-color: #DBDBDB;
+          color: #6A6A6A;
+          width: 100%;
+          height: 44px;
+          outline: none;
+          cursor: pointer; }
+          .section__bottom .reservation ul li button span {
+            font-size: 18px;
+            line-height: 21px; }
+        .section__bottom .reservation ul li button:hover {
+          background-color: #4E82BE;
+          color: white;
+          border: 1px solid #4E82BE; }
+        .section__bottom .reservation ul li button:focus {
+          background-color: #4E82BE;
+          color: white;
+          border: 1px solid #4E82BE; }
+
+.reservation__class__title {
+  margin-bottom: 16px; }
+
+.timetable {
+  margin-top: 66px; }
+  .timetable label span {
+    font-size: 20px;
+    line-height: 23px; }
+  .timetable label .label__input {
+    width: 130px; }
+
+.timetable__label {
+  margin-top: 10px; }
+
+@media screen and (max-width: 975px) {
+  .curriculum .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .class__list ul li button span {
+    font-size: 17px; } }
+@media screen and (max-width: 885px) {
+  .curriculum .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .class__list ul li button span {
+    font-size: 14px; } }
+@media screen and (max-width: 800px) {
+  .content {
+    width: 100%;
+    height: 600px;
+    margin: 22px auto 90px;
+    z-index: 20;
+    position: relative;
+    overflow: hidden; }
+
+  .section-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .curriculumAndClass {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%; }
+
+  .course {
+    width: 95%;
+    margin: 0 auto; }
+
+  .curriculum .list__programs {
+    margin: 10px; }
+
+  .curriculum__title h2 {
+    text-align: center; }
+
+  .class__title h2 {
+    text-align: center; }
+
+  .class__list ul li button span {
+    font-size: 14px; }
+
+  .course ul li {
+    margin: 3px 0px; }
+
+  .section__bottom {
+    margin-top: 40px; }
+
+  .section__bottom .reservation {
+    padding-left: 0px; }
+
+  .reservation ul li {
+    width: 100%; }
+
+  .reservation ul {
+    margin-top: 40px; }
+
+  .curriculum {
+    margin-right: 0; } }
+@media screen and (max-width: 500px) {
+  .content {
+    width: 100%;
+    height: 600px;
+    margin: 21px auto 50px;
+    z-index: 20;
+    position: relative;
+    overflow: hidden; }
+
+  .content__title h2 {
+    font-size: 62px; }
+
+  .class__list ul li button span {
+    font-size: 9px; }
+
+  .section__bottom .reservation ul li button span {
+    font-size: 14px; }
+
+  .timetable {
+    margin-left: 20px;
+    margin-top: 66px; }
+    .timetable label span {
+      font-size: 16px;
+      line-height: 23px; }
+
+  .class {
+    margin: 0 6px; } }
+
+/*# sourceMappingURL=style.css.map */

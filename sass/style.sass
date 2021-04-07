@@ -1,0 +1,369 @@
+$dark_blue: #4E82BE
+$dark_text: #515151
+$white_blue: #4E82BE
+$gray_color: #DBDBDB
+$title_size: 20px
+$font_size: 18px
+$line-height: 21px
+$button_color: #FFFFFF
+
+
+@font-face
+	font-family: "Roboto"
+	src: url("/fonts/Roboto-Light.woff2"), url("/fonts/Roboto-Light.woff")
+	font-weight: 300
+	font-display: swap
+	font-style: normal
+
+@font-face
+	font-family: "Roboto"
+	src: url("/fonts/Roboto-Regular.woff2"), url("/fonts/Roboto-Regular.woff")
+	font-weight: 500
+	font-display: swap
+	font-style: normal
+
+@font-face
+	font-family: "Roboto"
+	src: url("/fonts/Roboto-Bold.woff2"), url("/fonts/Roboto-Bold.woff")
+	font-weight: 700
+	font-display: swap
+	font-style: normal
+
+*
+	margin: 0
+	padding: 0
+
+body 
+	font-family: Roboto, arial, sans-serif
+.content
+	width: 100%
+	height: 600px
+	margin: 22px auto 90px
+	z-index: 20
+	position: relative
+	overflow: hidden
+
+	img
+		width: 100%
+		height: 100%
+		position: absolute
+		z-index: 10
+		object-fit: cover
+
+.content__title
+	text-align: center
+	margin: 0 auto
+	top: 250px
+	position: relative
+	z-index: 20
+
+	h2
+		font-weight: bold
+		font-size: 80px
+		line-height: 94px
+		font-family: Roboto
+		color: #000000
+
+.section-body 
+	display: flex
+
+	margin: 0 auto	
+
+	max-width: 1320px
+	width: 100%
+.curriculumAndClass
+	margin-left: 20px 
+	width: 55%
+.course
+	width: 45%
+.curriculum 
+	margin-right: 30px
+	margin-bottom: 60px
+	&__title 
+		width: 100%
+		margin-bottom: 4px
+		h2 
+			font-size: $title_size	
+			font-weight: bold
+			line-height: $line-height
+	.list
+		display: flex
+		flex-wrap: wrap 
+		width: 100%
+
+	.list__programs
+		max-width: 210px
+		width: 100%
+		height: 70px
+		border: 1px solid $gray_color
+		background-color: $gray_color
+		color: #6A6A6A
+		outline: none
+		cursor: pointer
+		margin: 5px
+		transition: .5s
+		h3 
+			font-size: $font_size
+			line-height: $line-height
+			font-weight: bold
+		span 
+			font-size: 12px 
+			line-height: 12px
+			text-align: center			
+	.list__programs:focus
+		background-color: $dark_blue
+		color: white
+		border: 1px solid $dark_blue
+	.list__programs:hover 
+		background-color: $dark_blue
+		color: white
+		border: 1px solid $dark_blue
+.class 	
+	margin-right: 30px
+	&__title 
+		width: 100%
+		margin-bottom: 4px
+		h2 
+			font-size: $title_size	
+			font-weight: bold
+			line-height: $line-height
+	&__list
+		display: flex
+		justify-content: space-between
+		ul
+			display: flex
+			flex-direction: column
+			margin: 5px 0px
+			width: 100%
+			list-style-type: none
+			li 
+				width: 95%
+				height: 45px
+				margin: 5px 8px 
+				margin-left: 0				
+				button
+					border: 1px solid $gray_color
+					background-color: $button_color
+					color: #6A6A6A 
+					padding: 12px
+					width: 100%
+					outline: none
+					cursor: pointer
+					transition: .5s
+					span 
+						font-size: 18px							
+						line-height: $line-height
+						color: $dark_text
+				.button-first
+					background-color: #E6E9F0
+					border: 1px solid blue
+				button:hover
+					background-color: $dark_blue
+					color: $button_color
+					border: 1px solid $dark_blue
+				button:focus
+					background-color: $dark_blue					
+					border: 1px solid $dark_blue
+				button:hover span 
+					color: $button_color
+				button:focus span 
+					color: $button_color
+.course
+	width: 45%
+	margin-right: 20px
+	&__header
+		width: 100%
+		margin-bottom: 4px
+		h3
+			font-size: $font_size
+			line-height: $line-height
+			font-weight: bold
+	&__body 
+		width: 100%
+	&__body-title 
+		width: 100%
+		height: auto
+		background-color: $dark_blue 
+		h4 
+			color: $button_color
+			padding: 14px 0px 14px 25px
+			margin: 3px 0 0 
+	ul
+		display: flex
+		flex-direction: column		
+		width: 100%
+		list-style-type: none
+		li
+			width: 100%
+			height: 40px			
+			margin: 2px 0px
+			button 
+				width: 100%
+				padding: 10px 0px 10px 0px
+				background-color: rgba(111, 143, 224, 0.88)
+				outline: none
+				border: 1px solid rgba(111, 143, 224, 0.88)
+				cursor: pointer
+				text-align: left
+				span 
+					font-size: $font_size							
+					line-height: $line-height
+					color: $button_color
+					position: relative
+					left: 25px				
+			button:hover 
+				background-color: rgba(111, 143, 224, 0.78)
+			button:focus
+				background-color: rgba(111, 143, 224, 0.78)
+	&__footer
+		width: 100%
+		background-color: #000000
+		text-align: center
+		h4
+			color: $button_color
+			font-size: 22px
+			line-height: 26px
+			font-weight: bold
+			padding: 12px 0px
+.section__bottom 
+	margin: 0 auto
+	max-width: 1320px
+	width: 95%
+	.reservation
+		width: 100%
+		padding-left: 0px
+		ul
+			display: flex			
+			list-style: none
+			li 
+				width: 93px
+				margin-right: 2px
+				button					
+					border: 1px solid $gray_color
+					background-color: $gray_color
+					color: #6A6A6A 
+					width: 100%
+					height: 44px
+					outline: none
+					cursor: pointer
+					span 
+						font-size: $font_size
+						line-height: $line-height						
+				button:hover 
+					background-color: $dark_blue
+					color: white
+					border: 1px solid $dark_blue
+				button:focus
+					background-color: $dark_blue
+					color: white
+					border: 1px solid $dark_blue
+    
+.reservation__class__title
+	margin-bottom: 16px
+.timetable 	
+	margin-top: 66px
+	label
+		span
+			font-size: 20px
+			line-height: 23px
+		.label__input 
+			width: 130px
+.timetable__label 
+	margin-top: 10px
+@media screen and (max-width: 975px)
+	.curriculum .list 
+		justify-content: center
+	.class__list 
+		ul 
+			li 
+				button 
+					span
+						font-size: 17px	
+@media screen and (max-width: 885px)
+	.curriculum .list 
+		justify-content: center
+	.class__list 
+		ul 
+			li 
+				button 
+					span
+						font-size: 14px
+@media screen and (max-width: 800px)
+	.content
+		width: 100%
+		height: 600px
+		margin: 22px auto 90px
+		z-index: 20
+		position: relative
+		overflow: hidden
+	.section-body 
+		flex-direction: column
+	.curriculumAndClass
+		margin: 0 auto		
+		margin-bottom: 50px		
+		width: 100%
+	.course 
+		width: 95%
+		margin: 0 auto	
+	.curriculum .list__programs
+		margin: 10px
+	.curriculum__title h2
+		text-align: center
+	.class__title h2 
+		text-align: center
+	.class__list 
+		ul 
+			li 
+				button 
+					span
+						font-size: 14px
+	.course 
+		ul 
+			li
+				margin: 3px 0px
+	.section__bottom
+		margin-top: 40px	
+	.section__bottom .reservation
+		padding-left: 0px
+	.reservation		
+		ul			
+			li 
+				width: 100%
+	.reservation
+		ul
+			margin-top: 40px
+	.curriculum
+		margin-right: 0
+@media screen and (max-width: 500px)
+	.content
+		width: 100%
+		height: 600px
+		margin: 21px auto 50px
+		z-index: 20
+		position: relative
+		overflow: hidden
+	.content__title h2 		
+		font-size: 62px
+	.class__list 
+		ul 
+			li 
+				button 
+					span
+						font-size: 9px
+	.section__bottom 
+		.reservation 
+			ul 
+				li 
+					button 
+						span
+							font-size: 14px
+	.timetable 
+		margin-left: 20px
+		margin-top: 66px
+		label
+			span
+				font-size: 16px
+				line-height: 23px
+	.class 
+		margin: 0 6px
+	
